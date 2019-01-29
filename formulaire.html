@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formulaire</title>
+</head>
+<body>
+    <h1>Mon premier Formulaire</h1>
+    <form action="gestion_data.php" method="POST">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom">
+        <br><br>
+        file :<input type="file" name="" id=""><br><br>
+        button : <input type="button" value="test"><br>
+        checkbox:
+            <label for=""><br>
+                test1
+                <input type="checkbox" name="" id="" >
+            </label><br>
+            <label for="">
+                test2
+                <input type="checkbox" name="" id="" >
+            </label><br>
+        couleur: <label for="">Le ciel est </label>
+                <input type="color" name="" id=""><br><br>
+                date: <label for="">Mon Anniversaire</label>
+                <input type="date" name="" id=""> <br><br>
+                <input type="datetime-local" name="" id=""><br><br>
+                email: <label for ="">Mon  courriel</label>
+                <input type="email" name="" id=""> <br><br>
+                image: <label for="">avatar</label>
+                <input type="image src=" alt=""> <br><br>
+                pwd: <label for="" >Mot de passe</label>
+                <input type="password" name="" id=""> <br>
+                genre: <label for="">sexe</label> <br>
+                <label for="">
+                    male
+                    <input type="radio" name="sexe" id="s" >
+                </label><br>
+                <label for="">
+                    female
+                    <input type="radio" name="sexe" id="s" >
+                </label><br>
+                range: <label for="">niveau</label>
+                        <br>
+                reset: <label for="">reset</label>
+                <input type="reset" value="reset"> <br>
+                <br>
+                
+                <label for="">Zone de texte</label><br>
+                <textarea name="" id="" cols="30" rows="10" ></textarea>
+                <br>
+                <label for="">Pays</label>
+                <select name="test" id="test">
+                    <option value="0">France</option>
+                    <option value="1">Allemangne</option>
+                    <option value="2">Italie</option>
+                </select>
+                <br>
+                <br>
+                <form action="" method="post">
+
+                        <label for="riz">Riz</label>
+                        <input type="checkbox" name="plat[]" id="riz" value="riz"><br>
+                
+                        <label for="frites">Frites</label>
+                        <input type="checkbox" name="plat[]" id="frites" value="frites"><br>
+                
+                        <label for="pommes de terre">Pomme de terre</label>
+                        <input type="checkbox" name="plat[]" id="pommes de terre" value="pommes de terre"><br>
+                
+                        <label for="pizza">Pizza</label>
+                        <input type="checkbox" name="plat[]" id="pizza" value="pizza"><br><br>
+                
+                        <input type="submit" name="input" value="Envoyer">
+                
+                    </form>
+                    <br>
+
+                    <label for="choix_bieres">Indiquez votre bière préférée :</label>
+                    <input list="bieres" type="text" id="choix_bieres">
+                    <datalist id="bieres">
+                    <option value="Meteor">
+                    <option value="Pils">
+                    <option value="Kronenbourg">
+                    <option value="Grimbergen">
+                    </datalist>
+                    
+                
+                     </form>
+</body>
+</html>
